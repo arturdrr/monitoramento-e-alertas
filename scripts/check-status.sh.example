@@ -1,0 +1,10 @@
+#!/bin/bash
+# Exemplo de script para verificar o status de serviços
+
+SERVICE_NAME="prometheus"
+
+if systemctl is-active --quiet $SERVICE_NAME; then
+  echo "$SERVICE_NAME está rodando."
+else
+  echo "$SERVICE_NAME NÃO está rodando."
+fi

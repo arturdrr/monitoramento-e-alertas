@@ -1,0 +1,12 @@
+# Exemplo de regras de alerta para Alertmanager
+# route:
+#   group_by: ['alertname']
+#   group_wait: 30s
+#   group_interval: 5m
+#   repeat_interval: 1h
+#   receiver: 'web_hook'
+
+# receivers:
+#   - name: 'web_hook'
+#     webhook_configs:
+#       - url: 'http://localhost:9090/webhook'
